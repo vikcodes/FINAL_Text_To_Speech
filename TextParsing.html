@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title> Audible Now </title>
+ <meta charset="utf-8" />
+
+ <!-- CSS -->
+     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway|Josefin+Sans:400,700"/>
+   <link rel="stylesheet" href="css/normalize.css" />
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+ </head>
+
+ <body>
+     <header>
+    <center> <div class = "container"> <div class="jumbotron"><h1> Parse </h1></div> </div></center>
+      </header>
+
+
+<div id="email-container" class="row"><center>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"><text>Email</text></div>
+  <div class="col-sm-2"><textarea id="email" name="email" placeholder="Enter your email"></textarea></div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"></div>
+</center>
+</div>
+
+<div id="title-container" class="row"><center>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"><text>Title</text></div>
+  <div class="col-sm-2"><textarea id="title" name="title" placeholder="Enter the title of your text"></textarea></div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"></div>
+</center>
+</div>
+
+<div id="text-container" class="row"><center>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"><text>Text</text></div>
+  <div class="col-sm-2"><textarea id="text" name="text" placeholder="Enter your text"></textarea></div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"></div>
+</center>
+</div>
+
+
+
+   <div id="pdf-button">
+       <center>
+         <button id="pdfButton" type="button" class="btn btn-default">Push to account</button>
+     </center>
+     </div>
+     <div class="col-sm-12"> </div>
+   <form id="fileupload" name="fileupload" enctype="multipart/form-data" method="post">
+<!--       <fieldset> -->
+  <div class="col-sm-12">
+    <center>
+       <input type="file" name="fileselect" id="fileselect"></input>
+     </center>
+       </div>
+       <div class="col-sm-2"></div>
+       <div class="col-sm-2"></div>
+       <div class="col-sm-2"></div>
+       <div class="col-sm-2"></div>
+       <div class="col-sm-2"></div>
+       <div class="col-sm-2"></div>
+
+   </form>
+
+    <script src="js/masonry.min.js"></script>
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/ocrad.js"></script>
+
+
+   
+ </body>
+</html>
