@@ -1,4 +1,9 @@
 (function(window, document, undefined) {
+  $(document).ready(function(){
+  setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 1650);
+});
 
  Parse.initialize("PsO5rkxMEaRvzzig7IKiQgfpQVRNdQFpPYO9Ipg0", "y5TnJxnaphDQ51Ezzq5mXd8nCqRQ3MQdTUxIMLRm");   
  
@@ -80,7 +85,6 @@ var email = $("#email").val();
             foundUser = foundUser[0];
             console.log(text);
             console.log(title);   
-            console.log(foundUser.id);
             var note = new Note();
             note.set("title", title);
             note.set("url", url);

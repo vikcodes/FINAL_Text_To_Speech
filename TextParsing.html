@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
  <title> Audible Now </title>
- <meta charset="utf-8" />
+
+ <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zack Herbst and Vikram Sreedhar" />
+    <meta name="description" content="This is the official website for Audible Now." />
+    <meta name="keywords" content="Audible Now, Audiobook, Text To Speech, GreyLockU, Startup, Parse" />
 
  <!-- CSS -->
-     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway|Josefin+Sans:400,700"/>
-   <link rel="stylesheet" href="css/normalize.css" />
-   <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway|Josefin+Sans:400,700"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/loader.css" />
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -16,9 +26,36 @@
  </head>
 
  <body>
+        <div id="loader-wrapper">
+        <div id="loader"></div>
+  <div class="body">
+    <div class="base">
+        <span></span>
+        <div class="face"></div>
+    </div>
+</div>
+<div class="longfazers">
+    <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<h1 class="loading">Loading...</h1>
+</div>
+
      <header>
-    <center> <div class = "container"> <div class="jumbotron"><h1> Parse </h1></div> </div></center>
+    <center> <div class = "container"> <div class="jumbotron" id="jumbo"><h1 id="header"> Audible Now </h1></div> </div></center>
       </header>
+      <div class="leftside"></div>
+      <div class="rightside"></div>
+
+      <div class="headphones">
+  <div class="band"></div>
+  <div class="earmuff"></div>
+  <div class="earmuff"></div>
+  <div class="topbook"></div>
+  <div class="bottombook"><i class="fa fa-volume-up fa-5x"></i></div>
+</div>
 
 
 <div id="email-container" class="row"><center>
@@ -58,7 +95,9 @@
          <button id="pdfButton" type="button" class="btn btn-default">Push to account</button>
      </center>
      </div>
+
      <div class="col-sm-12"> </div>
+     <div class="downside"></div>
    <form id="fileupload" name="fileupload" enctype="multipart/form-data" method="post">
 <!--       <fieldset> -->
   <div class="col-sm-12">
@@ -66,17 +105,12 @@
        <input type="file" name="fileselect" id="fileselect"></input>
      </center>
        </div>
-       <div class="col-sm-2"></div>
-       <div class="col-sm-2"></div>
-       <div class="col-sm-2"></div>
-       <div class="col-sm-2"></div>
-       <div class="col-sm-2"></div>
-       <div class="col-sm-2"></div>
 
    </form>
 
     <script src="js/masonry.min.js"></script>
    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
    <script src="js/script.js"></script>
    <script src="js/ocrad.js"></script>
 
